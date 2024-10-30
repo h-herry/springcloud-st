@@ -51,7 +51,7 @@ eureka:
 
 ## 2. 注册 Eureka Client
 
-Eureka Client 是实际的微服务应用，它会注册到 Eureka Server 上，让其他服务可以发现它。
+Eureka Client 是实际的微服务应用，它会注册到 Eureka Server 上，让其他服务可以发现它。  
 
 ### 2.1 添加依赖
 在 `pom.xml` 中添加 `spring-cloud-starter-netflix-eureka-client` 依赖：
@@ -67,6 +67,8 @@ Eureka Client 是实际的微服务应用，它会注册到 Eureka Server 上，
 
 ### 2.2 启用 Eureka Client
 在微服务的主类中添加 `@EnableEurekaClient` 注解：
+注意：高版本不需要添加该注解
+
 
 ```java
 import org.springframework.boot.SpringApplication;
