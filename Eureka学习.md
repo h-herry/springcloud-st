@@ -67,8 +67,8 @@ Eureka Client 是实际的微服务应用，它会注册到 Eureka Server 上，
 
 ### 2.2 启用 Eureka Client
 在微服务的主类中添加 `@EnableEurekaClient` 注解：
-注意：高版本不需要添加该注解
 
+**高版本不需要添加该注解**
 
 ```java
 import org.springframework.boot.SpringApplication;
